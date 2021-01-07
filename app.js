@@ -22,6 +22,20 @@ app.get('/project/:id', (req, res) => {
     res.render('project', { project });
 });
 
+app.use((res, req, next) => {
+    const err = new Error();
+    err.status = 404;
+    err.message = "Oops! Looks like the page doesn't exist!";
+    next(err);
+});
+
+app.use((err, req, res, next) => {
+    err.status = err.status || 500;
+    err.message = err.message || "Oops! It seems as though something went wrong!";
+    console.log(err);
+    next(err);
+});
+
 app.listen(3000, () => {
-    console.log('App listening at http://localhost://3000');
+    console.log('App listening at http://localhost:3000');
 });
