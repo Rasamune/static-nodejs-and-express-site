@@ -1,0 +1,88 @@
+{
+    "projects": [
+        {
+            "id": 0,
+            "project_name": "Quote Generator Project",
+            "description": "Quote Generator Project",
+            "technologies": [ "JavaScript", "CSS", "HTML" ],
+            "live_link": "https://rasamune.github.io/techdegree-project-1/",
+            "github_link": "https://github.com/Rasamune/techdegree-project-1",
+            "image_urls": [ 
+                "/images/p1_random_quote550x550.png", 
+                "/images/p1_random_quote1200x550.png"
+            ]
+        },
+        {
+            "id": 1,
+            "project_name": "RSVP App",
+            "description": "RSVP App",
+            "technologies": [ "JavaScript", "CSS", "HTML" ],
+            "live_link": "https://rasamune.github.io/rsvp-app/",
+            "github_link": "https://github.com/Rasamune/rsvp-app",
+            "image_urls": [ 
+                "/images/rsvp_app550x550.png", 
+                "/images/rsvp_app1200x550.png"
+            ]
+        },
+        {
+            "id": 2,
+            "project_name": "Data Pagination and Filtering",
+            "description": "Data Pagination and Filtering",
+            "technologies": [ "JavaScript", "CSS", "HTML" ],
+            "live_link": "https://rasamune.github.io/data-pagination-and-filtering/",
+            "github_link": "https://github.com/Rasamune/data-pagination-and-filtering",
+            "image_urls": [ 
+                "/images/data_paginationp550x550.png", 
+                "/images/data_pagination1200x550.png"
+            ]
+        },
+        {
+            "id": 3,
+            "project_name": "Connect Four Game",
+            "description": "Connect Four Game",
+            "technologies": [ "JavaScript", "CSS", "HTML" ],
+            "live_link": "https://rasamune.github.io/connect-four/",
+            "github_link": "https://github.com/Rasamune/connect-four",
+            "image_urls": [ 
+                "/images/connect_four550x550.png", 
+                "/images/connect_four1200x550.png"
+            ]
+        },
+        {
+            "id": 4,
+            "project_name": "Interactive Form",
+            "description": "Interactive Form",
+            "technologies": [ "JavaScript", "CSS", "HTML" ],
+            "live_link": "https://rasamune.github.io/interactive-form/",
+            "github_link": "https://github.com/Rasamune/interactive-form",
+            "image_urls": [ 
+                "/static/images/interactive_form550x550.png", 
+                "/static/images/interactive_form1200x550.png"
+            ]
+        },
+        {
+            "id": 5,
+            "project_name": "Title Hunter - Word Guessing Game",
+            "description": "Title Hunter - Word Guessing Game",
+            "technologies": [ "JavaScript", "CSS", "HTML" ],
+            "live_link": "https://rasamune.github.io/oop-game-show-app/",
+            "github_link": "https://github.com/Rasamune/oop-game-show-app",
+            "image_urls": [ 
+                "/static/images/title_hunter550x550.png", 
+                "/static/images/title_hunter1200x550.png"
+            ]
+        },
+        {
+            "id": 6,
+            "project_name": "Employee Directory - Public API Requests",
+            "description": "Employee Directory - Public API Requests",
+            "technologies": [ "JavaScript", "CSS", "HTML" ],
+            "live_link": "https://rasamune.github.io/public-api-requests/",
+            "github_link": "https://github.com/Rasamune/public-api-requests",
+            "image_urls": [ 
+                "/static/images/employee_api550x550.png", 
+                "/static/images/employee_api1200x550.png"
+            ]
+        }
+    ]
+}
