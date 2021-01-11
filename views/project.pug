@@ -8,6 +8,7 @@ block content
       .cell.small-6.medium-9.large-9
         h1= project.project_name
         p.lead.text-light= project.description
+        hr
 
       .cell.portfolio-meta.small-6.medium-2.large-3
         h6 Technologies
@@ -17,5 +18,5 @@ block content
         a.button.expanded(href=`${project.live_link}`, target="_blank") Live Demo
         a.button.expanded(href=`${project.github_link}`, target="_blank") GitHub Repo
     
-    //- Replace the URLs in the src attributes below with template literals and interpolation to dynamically add three project images.  You only have to add one image.  But adding more images to show your app in different states demonstrates a level of thoroughness and professionalism that potential employers will like to see. 
-    img.image(src=`${project.image_urls[1]}`)
+    a(href=`${project.live_link}`, target="_blank")
+      img.image(src=`${project.image_urls[1]}`)

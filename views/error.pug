@@ -1,0 +1,8 @@
+extends layout.pug
+
+block content
+    nav.grid-container.portfolio-breadcrumb
+        a(href='/') ← Back
+    h1= `There was a problem - Status: ${error.status}`
+    h2= error.message
+    pre= error.stack

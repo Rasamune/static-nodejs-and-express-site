@@ -1,10 +1,9 @@
 
-h1,h2,h3,h4,h5,p{
-  font-family: 'Merriweather', serif;
+h1,h2,h3,h4,h5,h6,p{
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
   h5{
-    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     letter-spacing: 2.5px;
     -webkit-text-transform: uppercase;
     text-transform: uppercase;
@@ -17,7 +16,12 @@ h1,h2,h3,h4,h5,p{
     font-weight: 600;
   }
 
+  body {
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
   p{
+    font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     color: #666;
   }
@@ -58,7 +62,7 @@ a:hover{
 
 .portfolio-me{
   padding: 20px;
-  background: #121213;
+  background: #1C3334;
   color: #fff;
   box-shadow: none !important;
 }
@@ -69,7 +73,7 @@ a:hover{
   }
 
   .portfolio-me a{
-    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    
     font-weight: 600;
     color: #555;
     font-size: 13px;
@@ -89,7 +93,7 @@ a:hover{
 }
 
  .portfolio-breadcrumb a{
-   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+   
    font-weight: 600;
    font-size: 13px;
    letter-spacing: 2.5px;
@@ -104,7 +108,11 @@ a:hover{
 
 .portfolio-intro p{
   border-bottom: 1px solid #eaeaea;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
+}
+
+.portfolio-intro hr {
+  margin-bottom: 35px;
 }
 
 .portfolio-index{
@@ -147,4 +155,27 @@ a:hover{
 
 .portfolio-bio{
     line-height: 25px;
+}
+
+.title-bar {
+  background: #376e6f;
+}
+
+#my-info .thumbnail {
+  border: solid 4px #376e6f;
+}
+
+#my-info p,
+#my-info li,
+#my-info a {
+  color: #51a4a6;
+}
+
+#my-info h5,
+#my-info h6 {
+  color: #6ed9db;
+}
+
+.lead {
+  font-size: 115%;
 }
