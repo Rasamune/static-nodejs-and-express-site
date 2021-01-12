@@ -30,6 +30,7 @@ app.get('/project/:id', (req, res) => {
         res.render('project', { project });
     } else {
         // If there is no project at the specefied ID redirect to error page
+        err.message = "Oops! Looks like that page doesn't exist!";
         res.redirect('/error');
     }
 });
@@ -46,10 +47,12 @@ app.use((res, req, next) => {
 app.use((err, req, res, next) => {
     // If 404 Send to Page Not Found
     if (err.status === 404) {
+        console.log(err.stack);
         return res.render('page-not-found', { error: err });
     }
     err.status = err.status || 500;
     err.message = err.message || "Oops! It seems as though something went wrong!";
+    console.log(err.stack);
     res.render('error', { error: err });
 });
 
