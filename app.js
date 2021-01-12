@@ -29,7 +29,7 @@ app.get('/project/:id', (req, res) => {
     if (project) {
         res.render('project', { project });
     } else {
-        // If there is no project at the specefied ID redirect to home page
+        // If there is no project at the specefied ID redirect to error page
         res.redirect('/error');
     }
 });
