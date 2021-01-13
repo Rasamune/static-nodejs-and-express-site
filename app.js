@@ -1,5 +1,7 @@
 const express = require('express');
 const data = require('./data.json');
+// Show projects in reverse order (newest projects first)
+const projects = data.projects.reverse();
 
 const app = express();
 
@@ -11,8 +13,6 @@ app.use('/static', express.static('public'));
 
 // Home Page
 app.get('/', (req, res) => {
-    // Show projects in reverse order (newest projects first)
-    const projects = data.projects.reverse();
     res.render('index', { projects });
 });
 
@@ -23,7 +23,6 @@ app.get('/about', (req, res) => {
 
 // Project Page
 app.get('/project/:id', (req, res) => {
-    const projects = data.projects;
     const project = projects.find(project => project.id === +req.params.id);
 
     if (project) {
